@@ -1,0 +1,2 @@
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(()=>{document.getElementById("toggleButton").addEventListener("click",(()=>{!function(){const t=document.getElementById("myPopover");"none"===t.style.display||""===t.style.display?t.style.display="block":t.style.display="none";const e=document.getElementById("toggleButton").getBoundingClientRect();t.style.top=e.top-t.offsetHeight-5+"px",t.style.left=`${e.left}px`}()}))}))}();
+//# sourceMappingURL=main.js.map
