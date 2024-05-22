@@ -10,7 +10,7 @@ describe('Interaction with DOM Test', () => {
     document.getElementById = jest.fn().mockImplementation((id) => {
       if (id === 'toggleButton') {
         return toggleButton;
-      } else if (id === 'myPopover') {
+      } if (id === 'myPopover') {
         return popover;
       }
     });
@@ -22,7 +22,7 @@ describe('Interaction with DOM Test', () => {
     Element.prototype.getBoundingClientRect = jest.fn().mockImplementation(() => ({
       top: 100,
       left: 200,
-      height: 50
+      height: 50,
     }));
 
     setupPopover();
