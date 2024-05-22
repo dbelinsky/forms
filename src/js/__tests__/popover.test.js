@@ -13,6 +13,7 @@ describe('Interaction with DOM Test', () => {
       } if (id === 'myPopover') {
         return popover;
       }
+      return null;
     });
 
     popover = document.createElement('div');
