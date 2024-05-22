@@ -19,9 +19,11 @@ describe('Interaction with DOM Test', () => {
     popover.id = 'myPopover';
     popover.style.display = 'none';
 
-    Element.prototype.getBoundingClientRect = jest.fn().mockImplementation(() => {
-      return { top: 100, left: 200, height: 50 };
-    });
+    Element.prototype.getBoundingClientRect = jest.fn().mockImplementation(() => ({
+      top: 100,
+      left: 200,
+      height: 50
+    }));
 
     setupPopover();
   });
