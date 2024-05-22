@@ -2,7 +2,7 @@ export function setupPopover() {
   const popover = document.getElementById('myPopover');
   if (popover.style.display === 'none' || popover.style.display === '') {
     popover.style.display = 'block';
-    } else {
+  } else {
     popover.style.display = 'none';
   }
 
@@ -12,9 +12,9 @@ export function setupPopover() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('toggleButton').addEventListener('click', () => {
-      setupPopover();
-    });
+  document.getElementById('toggleButton').addEventListener('click', () => {
+    setupPopover();
+  });
 });
 
 export default setupPopover;
